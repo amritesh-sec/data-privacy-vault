@@ -1,0 +1,145 @@
+---
+layout: default
+title: "Data Privacy Vault | Amritesh"
+description: "In-depth research on GDPR, UK DPA, CCPA, data breach analysis, and privacy compliance by Amritesh. Trusted across US, UK, Germany, Netherlands, and Nordic regions."
+---
+
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Data Protection · Privacy Law · Breach Analysis</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="accent">Data Privacy</span> Vault
+      </h1>
+      <p class="hero-desc">
+        Rigorous analysis of data protection law, regulatory enforcement, breach incidents,
+        and privacy compliance — across GDPR, UK DPA, CCPA, and emerging global frameworks.
+        Written for practitioners, not just lawyers.
+      </p>
+      <div class="hero-cta">
+        <a href="#articles" class="btn-primary">Read Research</a>
+        <a href="{{ site.parent_site.url }}" class="btn-secondary">← Main Site</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="law-panel">
+        <div class="law-header">
+          <span class="law-icon">🔒</span>
+          <span class="law-title">// privacy_frameworks.index</span>
+        </div>
+        <div class="law-body">
+          <div class="law-row">
+            <div><p class="law-name">GDPR</p><p class="law-region">European Union</p></div>
+            <span class="law-status status-enforced">ENFORCED</span>
+          </div>
+          <div class="law-row">
+            <div><p class="law-name">UK DPA 2018</p><p class="law-region">United Kingdom</p></div>
+            <span class="law-status status-enforced">ENFORCED</span>
+          </div>
+          <div class="law-row">
+            <div><p class="law-name">CCPA / CPRA</p><p class="law-region">California, US</p></div>
+            <span class="law-status status-active">ACTIVE</span>
+          </div>
+          <div class="law-row">
+            <div><p class="law-name">NIS2 Directive</p><p class="law-region">European Union</p></div>
+            <span class="law-status status-enforced">ENFORCED</span>
+          </div>
+          <div class="law-row">
+            <div><p class="law-name">DPDPA 2023</p><p class="law-region">India</p></div>
+            <span class="law-status status-emerging">EMERGING</span>
+          </div>
+          <div class="law-row">
+            <div><p class="law-name">EU AI Act</p><p class="law-region">European Union</p></div>
+            <span class="law-status status-active">ROLLING OUT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRAMEWORKS -->
+<section class="frameworks-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Coverage</span>
+      <h2>Frameworks & Regions</h2>
+      <p>Research covering every major privacy framework across our five target regions.</p>
+    </div>
+    <div class="frameworks-grid">
+      <div class="framework-card">
+        <span class="framework-flag">🇪🇺</span>
+        <h3>GDPR</h3>
+        <p>Enforcement decisions, fine analysis, DPA guidance, and practical compliance — from all EU supervisory authorities.</p>
+        <div class="framework-tags"><span class="tag">Articles 5-11</span><span class="tag">DPIAs</span><span class="tag">DPA Decisions</span></div>
+      </div>
+      <div class="framework-card">
+        <span class="framework-flag">🇬🇧</span>
+        <h3>UK DPA & ICO</h3>
+        <p>Post-Brexit UK data protection landscape — ICO enforcement actions, UK GDPR divergence, and regulatory updates.</p>
+        <div class="framework-tags"><span class="tag">ICO</span><span class="tag">UK GDPR</span><span class="tag">DPA 2018</span></div>
+      </div>
+      <div class="framework-card">
+        <span class="framework-flag">🇺🇸</span>
+        <h3>CCPA / CPRA</h3>
+        <p>California Consumer Privacy Act and its 2023 amendments — enforcement actions, opt-out rights, and business obligations.</p>
+        <div class="framework-tags"><span class="tag">CCPA</span><span class="tag">CPRA</span><span class="tag">CPPA</span></div>
+      </div>
+      <div class="framework-card">
+        <span class="framework-flag">🇩🇪</span>
+        <h3>Germany — BDSG & BSI</h3>
+        <p>German Federal Data Protection Act, BSI security guidance, and Germany's position as Europe's strictest enforcer.</p>
+        <div class="framework-tags"><span class="tag">BDSG</span><span class="tag">BSI</span><span class="tag">BfDI</span></div>
+      </div>
+      <div class="framework-card">
+        <span class="framework-flag">🇳🇱</span>
+        <h3>Netherlands — AP</h3>
+        <p>Dutch Data Protection Authority enforcement, NIS2 implementation, and Netherlands-specific privacy developments.</p>
+        <div class="framework-tags"><span class="tag">AP</span><span class="tag">NIS2</span><span class="tag">DPIA</span></div>
+      </div>
+      <div class="framework-card">
+        <span class="framework-flag">🇸🇪</span>
+        <h3>Nordic / Scandinavia</h3>
+        <p>Sweden, Norway, Denmark, Finland — Nordic DPA enforcement, eIDAS, and the region's privacy-first regulatory culture.</p>
+        <div class="framework-tags"><span class="tag">IMY</span><span class="tag">Datatilsynet</span><span class="tag">eIDAS</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLES -->
+<section class="articles-section" id="articles">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Research & Analysis</span>
+      <h2>Latest Articles</h2>
+    </div>
+    {% if site.posts.size > 0 %}
+    <div class="articles-grid">
+      {% for post in site.posts limit:6 %}
+      <article class="article-card">
+        {% if post.category %}<span class="article-cat">{{ post.category | upcase | replace: '-',' ' }}</span>{% endif %}
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+        <div class="article-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+          {% if post.tags %}<div class="article-tags">{% for tag in post.tags limit:2 %}<span class="tag-sm">{{ tag }}</span>{% endfor %}</div>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div style="text-align:center;padding:3rem 0;">
+      <p style="font-family:var(--font-mono);color:var(--text-3);">$ ls _posts/ — first articles publishing soon</p>
+    </div>
+    {% endif %}
+  </div>
+</section>

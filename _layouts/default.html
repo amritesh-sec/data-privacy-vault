@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {% seo %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/data-privacy-vault/assets/css/main.css' | absolute_url }}" />
+  <link rel="icon" type="image/svg+xml" href="{{ '/data-privacy-vault/assets/images/favicon.svg' | absolute_url }}" />
+  {% seo %}
+</head>
+<body>
+  {% include nav.html %}
+  <main>{{ content }}</main>
+  {% include footer.html %}
+  <script src="{{ '/data-privacy-vault/assets/js/main.js' | absolute_url }}"></script>
+</body>
+</html>
