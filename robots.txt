@@ -1,0 +1,3 @@
+-e User-agent: *
+Allow: /
+Sitemap: https://amritesh-sec.github.io/data-privacy-vault/sitemap.xml

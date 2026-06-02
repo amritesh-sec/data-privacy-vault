@@ -1,0 +1,56 @@
+# ============================================================
+# DATA PRIVACY VAULT — Research Repo
+# Part of amritesh-sec research hub
+# ============================================================
+
+title: "Data Privacy Vault | Amritesh"
+tagline: "GDPR · UK DPA · CCPA · Data Protection · Privacy Law"
+description: "In-depth data protection and privacy research covering GDPR enforcement, UK DPA, CCPA, breach analysis, and privacy compliance by Amritesh. US, UK, EU & Nordic focus."
+author: "Amritesh"
+baseurl: "/data-privacy-vault"
+url: "https://amritesh-sec.github.io"
+
+parent_site:
+  name: "Amritesh.sec"
+  url: "https://amritesh-sec.github.io"
+
+nordvault_url: "https://nordvaultsec.github.io"
+
+lang: "en"
+timezone: "Europe/London"
+permalink: /:year/:month/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Amritesh"
+      category: "data-privacy"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
+  - TEMPLATE*.md
